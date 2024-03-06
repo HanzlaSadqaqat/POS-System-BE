@@ -23,7 +23,7 @@ const validateToken = async (req, res, next) => {
     };
     next();
   } catch (error) {
-    return res.status(error.code || 401).send(error.message || "Unauthorized");
+    return res.status(error.code || 401).send(error.message || "UnAuthorized");
   }
 };
 
